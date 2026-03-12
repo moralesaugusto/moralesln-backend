@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  backend:
+    image: node:18
+    env_file:
+      - .env
+      - configs/mail.env
+    command: node -e "console.log('moralesln backend running')"
